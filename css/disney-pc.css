@@ -125,7 +125,7 @@
 
 .bloc1 {
     min-height: 100vh;
-    background-image: url(/img/background_bloc1.jpg);
+    background-image: url(img/background_bloc1.jpg);
     background-repeat: no-repeat;
     background-attachment: static;
     background-size: cover;
