@@ -1,6 +1,6 @@
-@media only screen and (max-width: 1025px) {
-    /* LOL HELLO */
-    
+@media only screen and (max-width: 1025px) and (min-width: 770px) {
+
+
     .navmain {
         background-color: #040714;
         color: white;
@@ -324,7 +324,7 @@
         box-sizing: border-box;
         background-image: url(../img/bg_bloc2_tab.jpg);
         background-repeat: no-repeat;
-            /* background-attachment: static; */
+        /* background-attachment: static; */
         background-size: contain;
         display: flex;
         padding: 5.6vw;
@@ -571,7 +571,7 @@
         line-height: 34px;
     }
 
-    .bloc5 p{
+    .bloc5 p {
         font-size: 16px;
         line-height: 28px;
     }
