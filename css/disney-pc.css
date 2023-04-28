@@ -125,7 +125,8 @@
 
 .bloc1 {
     min-height: 100vh;
-    background-image: url(/img/background_bloc1.jpg);
+    background-image: url(../img/background_bloc1.jpg); 
+    /* had to add .. at the start to fix issue with image detection */
     background-repeat: no-repeat;
     background-attachment: static;
     background-size: cover;
@@ -313,7 +314,7 @@ p {
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
-    background-image: url(/img/bg_bloc2.jpg);
+    background-image: url(../img/bg_bloc2.jpg);
     background-repeat: no-repeat;
     background-attachment: static;
     background-size: cover;
