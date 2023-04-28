@@ -1,3 +1,5 @@
+@media only screen and (min-width: 1025px) {    
+    
 
 .navmain {
     background-color: #040714;
@@ -125,7 +127,7 @@
 
 .bloc1 {
     min-height: 100vh;
-    background-image: url(../img/background_bloc1.jpg); 
+    background-image: url(../img/background_bloc1.jpg);
     /* had to add .. at the start to fix issue with image detection */
     background-repeat: no-repeat;
     background-attachment: static;
@@ -570,7 +572,7 @@ footer {
     justify-content: center;
 }
 
-footer p{
+footer p {
     font-family: 'Avenir LT Std 45 Book', Avenir;
     line-height: 50px;
 }
@@ -625,38 +627,38 @@ footer p {
 }
 
 
-footer label{
- position: relative;   
+footer label {
+    position: relative;
 }
 
-footer label img{
+footer label img {
     position: absolute;
-    top:-1px;
+    top: -1px;
     translate: 0px 50%;
     left: -15px;
     width: 15px;
 }
 
-footer select{
-background-color: transparent;
-font-size: 12px;
-color: silver;
-font-family: 'Avenir LT Std 45 Book', Avenir;
-border: none;
-cursor: pointer;
-text-align: center;
-align-items: center;
-justify-content: center;
-padding: 8px 12px;
-font-weight: lighter;
-width: 75px;
+footer select {
+    background-color: transparent;
+    font-size: 12px;
+    color: silver;
+    font-family: 'Avenir LT Std 45 Book', Avenir;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    font-weight: lighter;
+    width: 75px;
 }
 
 
 footer li:hover select {
     color: #f9f9f9;
     text-decoration: underline;
-  }
+}
 
 footer li .globe {
     filter: invert(1);
@@ -665,14 +667,15 @@ footer li .globe {
 
 footer li:hover .globe {
     opacity: 1;
-  }
+}
 
-  footer select option{
+footer select option {
     color: rgb(73, 73, 73);
     width: 75px;
-  }
+}
 
-  /* cba to make globe hover highligh language so ill do this */
-  .globe:hover{
+/* cba to make globe hover highligh language so ill do this */
+.globe:hover {
     opacity: 0.5;
-  }
+}
+}
