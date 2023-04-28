@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1025px) {    
+@media only screen and (max-width: 1025px) {
     .navmain {
         background-color: #040714;
         color: white;
@@ -14,7 +14,7 @@
         transition: 1s;
         opacity: 0;
     }
-    
+
     .navfirst {
         position: fixed;
         display: flex;
@@ -27,15 +27,15 @@
         align-items: center;
         z-index: 150;
     }
-    
+
     .navfirst ul {
         position: absolute;
         right: 45px;
         text-decoration: none;
         list-style: none;
     }
-    
-    
+
+
     .navmain ul {
         width: 100%;
         display: flex;
@@ -44,25 +44,25 @@
         padding: 0px;
         align-items: center;
     }
-    
+
     .navmain ul li {
         display: inline-block;
         text-decoration: none;
         list-style: none;
     }
-    
+
     .navlogo {
         width: 80px;
         margin-left: 15px;
         margin-bottom: 5px;
     }
-    
+
     /* Li of logo v */
     .distance {
         margin-top: 8px;
         margin-right: auto;
     }
-    
+
     .sign,
     .login {
         display: block;
@@ -77,7 +77,7 @@
         color: white;
         cursor: pointer;
     }
-    
+
     .sign {
         padding: 8px 14px;
         border: 1px solid #0063e5;
@@ -88,7 +88,7 @@
         text-transform: uppercase;
         transition: 0.2s;
     }
-    
+
     .login {
         padding: 8px 14px;
         border: 1px solid rgba(255, 255, 255, 0.76);
@@ -98,15 +98,15 @@
         font-family: 'Avenir LT Std 55 Roman', Avenir;
         text-transform: uppercase;
         transition: 0.2s;
-    
+
     }
-    
-    
+
+
     .login:hover {
         background-color: white;
         color: black;
     }
-    
+
     .li-sign,
     .li-login {
         text-align: center;
@@ -115,75 +115,80 @@
         margin: 5px;
         height: auto;
     }
-    
+
     .sign:active,
     .login:active {
         opacity: 60%;
         transform: scale(.97);
         transition: 0s;
     }
-    
+
     .bloc1 {
         min-height: 100vh;
         background-image: url(../img/bg_bloc1_tab.jpg);
         /* had to add .. at the start to fix issue with image detection */
         background-repeat: no-repeat;
         background-attachment: static;
-        background-size: cover;
+        background-size: contain;
         display: flex;
         padding: 5.6vw;
+        padding-top: 310px;
+        padding-bottom: 100px;
         box-sizing: border-box;
         justify-content: flex-start;
-        background-position: 50%;
         transition: all .2s ease 0s;
+        text-align: center;
     }
-    
+
     .div1 {
         font-family: 'Avenir LT Std 55 Roman', Avenir;
         color: white;
-        width: 50%;
+        width: 100%;
         max-width: 640px;
         box-sizing: border-box;
         margin-top: auto;
         margin-bottom: auto;
+        position: relative;
+        left: 50%;
+        translate: -50%;
     }
-    
+
     .logo {
-        text-align: left;
+        text-align: center;
         height: auto;
         width: 180px;
     }
-    
+
     h1 {
-        font-size: 44px;
+        font-size: 32px;
         line-height: 54px;
         color: white;
         font-family: 'Avenir LT Std 55 Roman', Avenir;
-        ;
+
     }
-    
+
     .bloc1 h1 {
         width: 90%;
-    
+
     }
-    
+
     p {
         font-family: 'Avenir LT Std 55 Roman', Avenir;
         color: silver;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 19px;
         line-height: 30px;
         letter-spacing: .2px;
     }
-    
+
     .div-mail {
         display: flex;
     }
-    
+
     .mailbar {
         width: 100%;
     }
-    
+
     .Email-bar {
         height: 50px;
         width: 100%;
@@ -196,12 +201,12 @@
         font-family: 'AvenirLTStd-Black', Avenir Helvetica, sans-serif;
         box-sizing: border-box;
     }
-    
+
     .Email-bar:focus {
         border-color: hsla(0, 0%, 100%, 0.247);
         outline: 0;
     }
-    
+
     .Continue-Button {
         height: 50px;
         width: 190px;
@@ -218,29 +223,30 @@
         box-sizing: border-box;
         transition: 0.3s;
     }
-    
+
     .Continue-Button:hover {
         background-color: #2282ff;
     }
-    
+
     .Continue-Button:active {
         opacity: 60%;
         transform: scale(.97);
         transition: 0s;
     }
-    
+
     .badmail {
         display: none;
         font-size: 12px;
         margin-top: 4px;
         color: red;
     }
-    
-    
+
+
     .arrow-R,
     .arrow-L {
         width: 3px;
         height: 16px;
+        bottom: 0px;
         display: block;
         background-color: white;
         color: white;
@@ -249,24 +255,24 @@
         opacity: 0.7;
         animation: arrow 2s infinite 0s;
     }
-    
+
     .arrow-L {
         display: block;
-        rotate: -45deg;
-        bottom: 40px;
-        left: 89px;
+        rotate: 45deg;
+        left: 50%;
+        translate: -50%;
         border-radius: 20px 20px 0px 20px;
-    
+
     }
-    
+
     .arrow-R {
         display: block;
-        rotate: 45deg;
-        bottom: 40px;
-        left: 98px;
+        rotate: -45deg;
+        left: 49%;
+        translate: -50%;
         border-radius: 20px 20px 20px 0px;
     }
-    
+
     .down-arrow {
         cursor: pointer;
         position: absolute;
@@ -279,78 +285,78 @@
         box-sizing: border-box;
         opacity: 0;
     }
-    
+
     .down-arrow:hover~.arrow-L,
     .down-arrow:hover~.arrow-R {
         opacity: 1;
     }
-    
+
     @keyframes arrow {
         0% {
             translate: 0% 0%;
         }
-    
+
         70% {
             translate: 0% -50%;
         }
-    
+
         75% {
             translate: 0% 0%;
         }
-    
+
         90% {
             translate: 0% -30%;
         }
-    
+
         100% {
             translate: 0% 0%;
         }
     }
-    
-    
+
+
     /* -==--==--==-Section 2-==--==--==--==--==--==-Section 2-==--==--==--==--==--==-Section 2-==--==--==--==--==--==-Section 2-==--==--==- */
-    
+
     .bloc2 {
         width: 100%;
-        height: 100vh;
+        height: 60vh;
         box-sizing: border-box;
-        background-image: url(../img/bg_bloc2.jpg);
+        background-image: url(../img/bg_bloc2_tab.jpg);
         background-repeat: no-repeat;
         background-attachment: static;
-        background-size: cover;
+        background-size: contain;
         display: flex;
         padding: 5.6vw;
     }
-    
+
     .div2 {
         font-family: 'Avenir LT Std 55 Roman', Avenir;
         color: white;
         width: 50%;
         max-width: 640px;
         box-sizing: border-box;
-        margin-top: 90px;
+        margin-top: -50px;
+        height: fit-content;
     }
-    
+
     .div2 h1 {
-        font-family: 'Avenir LT Std 55 Roman', Avenir;
-        color: white;
-        font-size: 44px;
+        font-size: 32px;
         line-height: 54px;
-        width: 90%;
+        color: white;
+        font-family: 'Avenir LT Std 55 Roman', Avenir;
     }
-    
+
     .div2 p {
         font-family: 'Avenir LT Std 55 Roman', Avenir;
         color: silver;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 19px;
         line-height: 30px;
         letter-spacing: .2px;
         width: 76%;
     }
-    
+
     /* -==--==--==-Section 3-==--==--==--==--==--==-Section 3-==--==--==--==--==--==-Section 3-==--==--==- */
-    
+
     .bloc3 {
         height: fit-content;
         width: 100%;
@@ -358,11 +364,11 @@
         text-align: center;
         padding: 5.6vw;
     }
-    
+
     .bloc3_bg {
         width: 100%;
     }
-    
+
     h3 {
         font-size: 28px;
         line-height: 38px;
@@ -373,13 +379,13 @@
         margin-bottom: 23px;
         /* border: pink 2px solid; */
     }
-    
+
     .bloc3 p {
         font-size: 20px;
         /* border: blue 2px solid; */
         margin-top: 0px;
     }
-    
+
     .bloc3 ul {
         box-sizing: border-box;
         width: 100%;
@@ -392,9 +398,9 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: stretch;
-    
+
     }
-    
+
     .bloc3 li {
         display: grid;
         text-align: center;
@@ -405,7 +411,7 @@
         box-sizing: border-box;
         align-items: center;
     }
-    
+
     .bloc3 ul img {
         display: block;
         height: auto;
@@ -413,16 +419,16 @@
         width: 100%;
         margin: 0px;
     }
-    
-    
+
+
     /* -==--==--==-Section 4-==--==--==--==--==--==-Section 4-==--==--==--==--==--==-Section 4-==--==--==--==--==--==-Section 4-==--==--==- */
-    
+
     .bloc4 {
         width: 100%;
         box-sizing: border-box;
         padding: 5.6vw;
     }
-    
+
     /* cat is the div of everything */
     .cat {
         align-items: center;
@@ -430,7 +436,7 @@
         box-sizing: border-box;
         display: grid;
     }
-    
+
     .bloc4 h1 {
         text-align: center;
         margin-top: 0px;
@@ -438,7 +444,7 @@
         font-size: 40px;
         font-weight: 900;
     }
-    
+
     .bloc4 button {
         width: 100%;
         text-align: left;
@@ -450,7 +456,7 @@
         padding: 20px 24px;
         cursor: pointer;
     }
-    
+
     .bar-shown {
         font-size: 20px;
         line-height: 38px;
@@ -459,7 +465,7 @@
         font-family: 'Avenir LT Std 55 Roman', Avenir;
         background-color: #13151d;
     }
-    
+
     .vertical,
     .horizontal {
         width: 3px;
@@ -472,15 +478,15 @@
         position: absolute;
         display: block;
     }
-    
+
     .vertical {
         opacity: 1;
     }
-    
+
     .horizontal {
         rotate: 90deg;
     }
-    
+
     .bar-hidden {
         padding: 24px;
         padding-top: 0px;
@@ -492,16 +498,16 @@
         max-height: 0px;
         padding-bottom: 0px;
     }
-    
+
     /* @keyframes slide {
         0%{max-height: -20px;}
         100%{max-height: 500px;}
     } */
-    
+
     .bar-hidden p {
         margin-top: 0px;
     }
-    
+
     .bar-hidden li {
         font-family: 'Avenir LT Std 55 Roman', Avenir;
         color: silver;
@@ -512,24 +518,24 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    
+
     .bar-hidden a {
         color: white;
     }
-    
+
     .bar-all {
         margin-top: 20px;
     }
-    
-    
+
+
     /* -==--==--==-Section 5-==--==--==--==--==--==-Section 5-==--==--==--==--==--==-Section 5-==--==--==--==--==--==-Section 5-==--==--==- */
-    
+
     .bloc5 {
         width: 100%;
         box-sizing: border-box;
         padding: 5.6vw;
     }
-    
+
     .bloc5 h1 {
         text-align: center;
         margin-top: 0px;
@@ -537,27 +543,28 @@
         font-size: 40px;
         font-weight: 900;
     }
-    
+
     .bloc5 ul {
         display: flex;
         text-align: center;
         width: 100%;
         box-sizing: border-box;
+        padding-left: 0px;
     }
-    
+
     .bloc5 li {
         width: 25%;
         box-sizing: border-box;
         align-items: center;
     }
-    
+
     .bloc5 img {
         display: block;
         height: auto;
         width: 100%;
         margin: 0px;
     }
-    
+
     /* -==--==--==-Footer-==--==--==--==--==--==-Footer-==--==--==--==--==--==-Footer-==--==--==--==--==--==-Footer-==--==--==- */
     footer {
         width: 100%;
@@ -569,29 +576,29 @@
         position: relative;
         justify-content: center;
     }
-    
+
     footer p {
         font-family: 'Avenir LT Std 45 Book', Avenir;
         line-height: 50px;
     }
-    
+
     footer img {
         width: 80px;
     }
-    
+
     footer ul {
         display: flex;
         flex-wrap: wrap;
         text-align: center;
         align-items: center;
         justify-content: center;
-        width: 1000px;
+        width: 700px;
         padding: 0px;
         position: relative;
         left: 50%;
         translate: -50%;
     }
-    
+
     footer li {
         text-decoration: none;
         list-style: none;
@@ -600,7 +607,7 @@
         align-items: center;
         justify-content: center;
     }
-    
+
     footer li a {
         font-family: 'Avenir LT Std 45 Book', Avenir;
         color: silver;
@@ -611,24 +618,24 @@
         text-decoration: none;
         padding: 8px 12px;
         cursor: pointer;
-    
+
     }
-    
+
     footer li a:hover {
         color: #f9f9f9;
     }
-    
+
     footer p {
         font-size: 12px;
         color: silver;
         font-family: 'Avenir LT Std 45 Book', Avenir;
     }
-    
-    
+
+
     footer label {
         position: relative;
     }
-    
+
     footer label img {
         position: absolute;
         top: -1px;
@@ -636,7 +643,7 @@
         left: -15px;
         width: 15px;
     }
-    
+
     footer select {
         background-color: transparent;
         font-size: 12px;
@@ -651,27 +658,27 @@
         font-weight: lighter;
         width: 75px;
     }
-    
-    
+
+
     footer li:hover select {
         color: #f9f9f9;
         text-decoration: underline;
     }
-    
+
     footer li .globe {
         filter: invert(1);
         opacity: 0.5;
     }
-    
+
     footer li:hover .globe {
         opacity: 1;
     }
-    
+
     footer select option {
         color: rgb(73, 73, 73);
         width: 75px;
     }
-    
+
     /* cba to make globe hover highligh language so ill do this */
     .globe:hover {
         opacity: 0.5;
