@@ -1,5 +1,16 @@
 @media only screen and (min-width: 1025px) {
 
+
+    @font-face {
+        font-family: 'Avenir LT Std 55 Roman';
+        src: url(../fonts/AVENIRLTSTD-ROMAN.OTF) format('opentype');
+    }
+
+    @font-face {
+        font-family: 'Avenir LT Std 45 Book';
+        src: url(../fonts/AVENIRLTSTD-BOOK.OTF) format('opentype');
+    }
+
     .navmain {
         background-color: #040714;
         color: white;
@@ -513,11 +524,11 @@
         letter-spacing: .2px;
         margin-top: 10px;
         margin-bottom: 10px;
-        list-style:decimal;
+        list-style: decimal;
 
     }
 
-    .numbers{
+    .numbers {
         list-style-type: decimal;
     }
 
@@ -560,6 +571,7 @@
         box-sizing: border-box;
         align-items: center;
     }
+
 
     .bloc5 img {
         display: block;
@@ -688,4 +700,5 @@
     .globe:hover {
         opacity: 0.5;
     }
+
 }

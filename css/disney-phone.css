@@ -2,6 +2,16 @@
 
 
 
+    @font-face {
+        font-family: 'Avenir LT Std 55 Roman';
+        src: url(../fonts/AVENIRLTSTD-ROMAN.OTF) format('opentype');
+    }
+
+    @font-face {
+        font-family: 'Avenir LT Std 45 Book';
+        src: url(../fonts/AVENIRLTSTD-BOOK.OTF) format('opentype');
+    }
+
     .navmain {
         background-color: #040714;
         color: white;
@@ -129,7 +139,7 @@
     }
 
     .bloc1 {
-        /*! min-height: 112vh; */        
+        /*! min-height: 112vh; */
         padding-top: 22%;
         background-image: url(../img/bg_bloc1_tab.jpg);
         /* had to add .. at the start to fix issue with image detection */
@@ -320,11 +330,13 @@
         padding: 5.6vw;
         padding-top: 44vw;
     }
-    .bg_bloc2{
+
+    .bg_bloc2 {
         width: 100%;
         height: auto;
         display: block;
     }
+
     .div2 {
         font-family: 'Avenir LT Std 55 Roman', Avenir;
         color: white;
@@ -530,9 +542,9 @@
         margin-bottom: 10px;
     }
 
-.numbers{
-    list-style-type: decimal;
-}
+    .numbers {
+        list-style-type: decimal;
+    }
 
     .bar-hidden a {
         color: white;
@@ -721,4 +733,5 @@
     .globe:hover {
         opacity: 0.5;
     }
+
 }

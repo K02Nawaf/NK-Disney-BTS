@@ -1,5 +1,14 @@
 @media only screen and (max-width: 1025px) and (min-width: 770px) {
 
+    @font-face {
+        font-family: 'Avenir LT Std 55 Roman';
+        src: url(../fonts/AVENIRLTSTD-ROMAN.OTF) format('opentype');
+    }
+
+    @font-face {
+        font-family: 'Avenir LT Std 45 Book';
+        src: url(../fonts/AVENIRLTSTD-BOOK.OTF) format('opentype');
+    }
 
     .navmain {
         background-color: #040714;
@@ -521,9 +530,10 @@
         letter-spacing: .2px;
         margin-top: 10px;
         margin-bottom: 10px;
-        list-style:decimal;
+        list-style: decimal;
     }
-    .numbers{
+
+    .numbers {
         list-style-type: decimal;
     }
 
@@ -710,4 +720,5 @@
     .globe:hover {
         opacity: 0.5;
     }
+
 }
