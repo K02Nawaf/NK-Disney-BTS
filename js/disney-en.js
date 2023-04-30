@@ -75,3 +75,8 @@ for (let i = 0; i < buttons.length; i++) {
 
 // language change 
 
+const languageSelector = document.querySelector('#language-selector');
+languageSelector.addEventListener('change', () => {
+  const selectedOption = languageSelector.options[languageSelector.selectedIndex];
+  window.location.href = selectedOption.value;
+});

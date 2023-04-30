@@ -34,6 +34,8 @@
         right: 45px;
         text-decoration: none;
         list-style: none;
+        text-decoration: none;
+        list-style: none;
     }
 
 
@@ -44,6 +46,8 @@
         margin-top: 20px;
         padding: 0px;
         align-items: center;
+        text-decoration: none;
+        list-style: none;
     }
 
     .navmain ul li {
@@ -385,7 +389,8 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: stretch;
-
+        text-decoration: none;
+        list-style: none;
     }
 
     .bloc3 li {
@@ -405,6 +410,8 @@
         /* border: white 2px solid; */
         width: 100%;
         margin: 0px;
+        text-decoration: none;
+        list-style: none;
     }
 
 
@@ -536,6 +543,8 @@
         text-align: center;
         width: 100%;
         box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
     }
 
     .bloc5 li {
@@ -583,6 +592,8 @@
         position: relative;
         left: 50%;
         translate: -50%;
+        text-decoration: none;
+        list-style: none;
     }
 
     footer li {
