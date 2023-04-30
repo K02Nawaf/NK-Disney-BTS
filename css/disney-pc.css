@@ -308,18 +308,20 @@
         background-image: url(../img/bg_bloc2.jpg);
         background-repeat: no-repeat;
         background-attachment: static;
-        background-size: cover;
+        background-size: contain;
         display: flex;
         padding: 5.6vw;
     }
-
+.bg_bloc2{
+    display: none;
+}
     .div2 {
         font-family: 'Avenir LT Std 55 Roman', Avenir;
         color: white;
         width: 50%;
         max-width: 640px;
         box-sizing: border-box;
-        margin-top: 90px;
+        margin-top: 20px;
     }
 
     .div2 h1 {

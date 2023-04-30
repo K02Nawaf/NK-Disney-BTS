@@ -319,6 +319,10 @@
         display: flex;
         padding: 5.6vw;
         padding-bottom: 0px;
+        padding-top: 12vw;
+    }
+    .bg_bloc2{
+        display: none;
     }
 
     .div2 {
