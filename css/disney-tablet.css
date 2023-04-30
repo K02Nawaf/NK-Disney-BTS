@@ -134,7 +134,7 @@
         background-size: contain;
         display: flex;
         padding: 5.6vw;
-        padding-top: 310px;
+        padding-top: 45%;
         padding-bottom: 100px;
         box-sizing: border-box;
         justify-content: flex-start;
@@ -244,13 +244,12 @@
     }
 
 
-    .arrow-R,
-    .arrow-L {
-        width: 3px;
-        height: 16px;
-        bottom: 0px;
-        display: block;
-        background-color: white;
+    .arrow-R {
+        width: 15px;
+        height: 15px;
+        border: 2px solid #ffffff;
+        border-left: 0;
+        border-top: 0;
         color: white;
         position: absolute;
         z-index: 100;
@@ -258,38 +257,29 @@
         animation: arrow 2s infinite 0s;
     }
 
-    .arrow-L {
-        display: block;
-        rotate: 45deg;
-        left: 50%;
-        translate: -50%;
-        border-radius: 20px 20px 0px 20px;
-
-    }
 
     .arrow-R {
         display: block;
-        rotate: -45deg;
-        left: 49%;
-        translate: -50%;
-        border-radius: 20px 20px 20px 0px;
+        rotate: 45deg;
+        top: 10px;
+        right: 10px;
     }
 
     .down-arrow {
         cursor: pointer;
-        position: absolute;
-        bottom: 37px;
-        left: 78px;
+        position: relative;
+        bottom: -35px;
         width: 37px;
         height: 36px;
         border-style: solid;
-        z-index: 100;
+        z-index: 102;
         box-sizing: border-box;
-        opacity: 0;
+        opacity: 1;
+        background-color: transparent;
+        border: 0px;
     }
 
-    .down-arrow:hover~.arrow-L,
-    .down-arrow:hover~.arrow-R {
+    .down-arrow:hover .arrow-R {
         opacity: 1;
     }
 
@@ -337,7 +327,7 @@
         width: 50%;
         max-width: 640px;
         box-sizing: border-box;
-        margin-top: -50px;
+        margin-top: -30px;
         height: fit-content;
     }
 

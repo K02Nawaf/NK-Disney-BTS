@@ -1,13 +1,13 @@
 @media only screen and (max-width: 770px) and (min-width: 100px) {
 
-    
-    
+
+
     .navmain {
         background-color: #040714;
         color: white;
         display: flex;
         position: fixed;
-        padding: 0 40px;
+        padding: 0 5px;
         height: 70px;
         width: 100%;
         box-sizing: border-box;
@@ -21,7 +21,7 @@
     .navfirst {
         position: fixed;
         display: flex;
-        padding: 0px 40px;
+        padding: 0px 5px;
         width: 100%;
         box-sizing: border-box;
         top: 0px;
@@ -33,7 +33,7 @@
 
     .navfirst ul {
         position: absolute;
-        right: 45px;
+        right: 10px;
         text-decoration: none;
         list-style: none;
     }
@@ -56,7 +56,7 @@
 
     .navlogo {
         width: 80px;
-        margin-left: 15px;
+        margin-left: 24px;
         margin-bottom: 5px;
     }
 
@@ -73,7 +73,7 @@
         display: inline-flex;
         letter-spacing: 1px;
         height: 33px;
-        font-size: 19px;
+        font-size: 14px;
         font-weight: 100;
         border-radius: 4px 4px 4px 4px;
         text-decoration: none;
@@ -82,7 +82,7 @@
     }
 
     .sign {
-        padding: 8px 14px;
+        padding: 2px 8px;
         border: 1px solid #0063e5;
         background-color: #0063e5;
         margin: auto;
@@ -93,7 +93,7 @@
     }
 
     .login {
-        padding: 8px 14px;
+        padding: 2px 8px;
         border: 1px solid rgba(255, 255, 255, 0.76);
         background-color: rgba(0, 0, 0, .8);
         margin: auto;
@@ -127,7 +127,8 @@
     }
 
     .bloc1 {
-        min-height: 100vh;
+        /*! min-height: 112vh; */        
+        padding-top: 22%;
         background-image: url(../img/bg_bloc1_tab.jpg);
         /* had to add .. at the start to fix issue with image detection */
         background-repeat: no-repeat;
@@ -135,36 +136,36 @@
         background-size: contain;
         display: flex;
         padding: 5.6vw;
-        padding-top: 310px;
-        padding-bottom: 100px;
         box-sizing: border-box;
         justify-content: flex-start;
         transition: all .2s ease 0s;
         text-align: center;
+        padding-bottom: 11vw;
     }
 
     .div1 {
         font-family: 'Avenir LT Std 55 Roman', Avenir;
         color: white;
         width: 100%;
-        max-width: 640px;
+        max-width: 500px;
         box-sizing: border-box;
-        margin-top: auto;
-        margin-bottom: auto;
+        margin-top: 49%;
+        /*! margin-bottom: auto; */
         position: relative;
         left: 50%;
         translate: -50%;
+        height: 100%;
     }
 
     .logo {
         text-align: center;
         height: auto;
-        width: 180px;
+        width: 130px;
     }
 
     h1 {
-        font-size: 32px;
-        line-height: 54px;
+        font-size: 26px;
+        line-height: 36px;
         color: white;
         font-family: 'Avenir LT Std 55 Roman', Avenir;
 
@@ -179,13 +180,13 @@
         font-family: 'Avenir LT Std 55 Roman', Avenir;
         color: silver;
         font-weight: 400;
-        font-size: 19px;
-        line-height: 30px;
+        font-size: 15px;
+        line-height: 26px;
         letter-spacing: .2px;
     }
 
     .div-mail {
-        display: flex;
+        display: grid;
     }
 
     .mailbar {
@@ -195,12 +196,12 @@
     .Email-bar {
         height: 50px;
         width: 100%;
-        border-radius: 4px 0 0 4px;
+        border-radius: 4px 4px 4px 4px;
         background-color: #31343e;
         border: 1px solid #31343e;
         color: silver;
         padding: 0px 20px;
-        font-size: 20px;
+        font-size: 16px;
         font-family: 'AvenirLTStd-Black', Avenir Helvetica, sans-serif;
         box-sizing: border-box;
     }
@@ -212,16 +213,16 @@
 
     .Continue-Button {
         height: 50px;
-        width: 190px;
-        max-width: 260px;
+        width: 100%;
+        margin-top: 10px;
         background: #016cf9;
         border: none;
         color: #f9f9f9;
         text-decoration: none;
-        border-radius: 0 4px 4px 0;
+        border-radius: 4px 4px 4px 4px;
         cursor: pointer;
         transition: all .2s ease 0s;
-        font-size: 18px;
+        font-size: 16px;
         font-family: 'Avenir LT Std 55 Roman', Avenir;
         box-sizing: border-box;
         transition: 0.3s;
@@ -245,13 +246,12 @@
     }
 
 
-    .arrow-R,
-    .arrow-L {
-        width: 3px;
-        height: 16px;
-        bottom: 0px;
-        display: block;
-        background-color: white;
+    .arrow-R {
+        width: 15px;
+        height: 14px;
+        border: 2px solid #ffffff;
+        border-left: 0;
+        border-top: 0;
         color: white;
         position: absolute;
         z-index: 100;
@@ -259,38 +259,29 @@
         animation: arrow 2s infinite 0s;
     }
 
-    .arrow-L {
-        display: block;
-        rotate: 45deg;
-        left: 50%;
-        translate: -50%;
-        border-radius: 20px 20px 0px 20px;
-
-    }
 
     .arrow-R {
         display: block;
-        rotate: -45deg;
-        left: 49%;
-        translate: -50%;
-        border-radius: 20px 20px 20px 0px;
+        rotate: 45deg;
+        top: 10px;
+        right: 10px;
     }
 
     .down-arrow {
         cursor: pointer;
-        position: absolute;
-        bottom: 37px;
-        left: 78px;
+        position: relative;
+        bottom: -12vw;
         width: 37px;
         height: 36px;
         border-style: solid;
-        z-index: 100;
+        z-index: 102;
         box-sizing: border-box;
-        opacity: 0;
+        opacity: 1;
+        background-color: transparent;
+        border: 0px;
     }
 
-    .down-arrow:hover~.arrow-L,
-    .down-arrow:hover~.arrow-R {
+    .down-arrow:hover .arrow-R {
         opacity: 1;
     }
 
@@ -321,30 +312,35 @@
 
     .bloc2 {
         width: 100%;
-        height: 55vw;
+        height: 111vw;
         box-sizing: border-box;
-        background-image: url(../img/bg_bloc2_tab.jpg);
+        background-image: url(../img/bg_bloc2_phone.jpg);
         background-repeat: no-repeat;
-            /* background-attachment: static; */
+        /* background-attachment: static; */
         background-size: contain;
         display: flex;
         padding: 5.6vw;
-        padding-bottom: 0px;
+        /*! padding-bottom: 18px; */
+        /*! margin-top: 138px; */
+        padding-top: 39vw;
+        background-position: bottom;
     }
 
     .div2 {
         font-family: 'Avenir LT Std 55 Roman', Avenir;
         color: white;
-        width: 50%;
+        width: 100%;
         max-width: 640px;
         box-sizing: border-box;
-        margin-top: -50px;
+        margin-top: -32vw;
         height: fit-content;
+        text-align: center;
+        /*! position: relative; */
     }
 
     .div2 h1 {
-        font-size: 24px;
-        line-height: 34px;
+        font-size: 26px;
+        line-height: 36px;
         color: white;
         font-family: 'Avenir LT Std 55 Roman', Avenir;
     }
@@ -353,10 +349,13 @@
         font-family: 'Avenir LT Std 55 Roman', Avenir;
         color: silver;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 16px;
+        line-height: 26px;
         letter-spacing: .2px;
-        width: 76%;
+        width: 100%;
+        margin-top: 0px;
+        display: inline-block;
+        max-width: 500px;
     }
 
     /* -==--==--==-Section 3-==--==--==--==--==--==-Section 3-==--==--==--==--==--==-Section 3-==--==--==- */
@@ -367,7 +366,7 @@
         box-sizing: border-box;
         text-align: center;
         padding: 5.6vw;
-        padding-top: 0px;
+        padding-top: 88px;
     }
 
     .bloc3_bg {
@@ -386,8 +385,8 @@
     }
 
     .bloc3 p {
-        font-size: 18px;
-        /* border: blue 2px solid; */
+        font-size: 16px;
+        line-height: 26px;
         margin-top: 0px;
     }
 
@@ -399,7 +398,7 @@
         display: flex;
         /* border: rgb(255, 0, 0) 2px solid; */
         padding: 0px;
-        display: flex;
+        display: grid;
         flex-wrap: wrap;
         justify-content: center;
         align-items: stretch;
@@ -409,7 +408,7 @@
     .bloc3 li {
         display: grid;
         text-align: center;
-        width: 30%;
+        width: 100%;
         /* border: rgb(48, 255, 6) 2px solid; */
         margin: 0px auto;
         height: 100%;
@@ -448,8 +447,8 @@
         text-align: center;
         margin-top: 0px;
         margin-bottom: 5px;
-        font-size: 28px;
-        line-height: 38px;
+        font-size: 24px;
+        line-height: 36px;
     }
 
     .bloc4 button {
@@ -465,9 +464,13 @@
     }
 
     .bar-shown {
-        font-size: 18px;
-        line-height: 38px;
-        width: 100%;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: lighter;
+        letter-spacing: .2px;
+        line-height: 26px;
+        /*! line-height: 38px; */
+        width: 98%;
         color: white;
         font-family: 'Avenir LT Std 55 Roman', Avenir;
         background-color: #13151d;
@@ -499,7 +502,7 @@
         padding-top: 0px;
         background-color: #13151d;
         /* animation-name: slide;
-        animation-duration: 2s; */
+            animation-duration: 2s; */
         transition: max-height 0.5s;
         overflow: hidden;
         max-height: 0px;
@@ -507,9 +510,9 @@
     }
 
     /* @keyframes slide {
-        0%{max-height: -20px;}
-        100%{max-height: 500px;}
-    } */
+            0%{max-height: -20px;}
+            100%{max-height: 500px;}
+        } */
 
     .bar-hidden p {
         margin-top: 0px;
@@ -547,8 +550,8 @@
         text-align: center;
         margin-top: 0px;
         margin-bottom: 24px;
-        font-size: 28px;
-        line-height: 38px;
+        font-size: 26px;
+        line-height: 36px;
     }
 
     .bloc5 ul {
@@ -557,14 +560,19 @@
         width: 100%;
         box-sizing: border-box;
         padding-left: 0px;
+        grid-column: 2;
+        grid-row: 2;
+        flex-wrap: wrap;
     }
 
     .bloc5 li {
-        width: 25%;
+        width: 44%;
         box-sizing: border-box;
         align-items: center;
         margin-left: 10px;
         margin-right: 10px;
+        /*! grid-row: auto; */
+        /*! grid-column: auto; */
     }
 
     .bloc5 h3 {
@@ -572,9 +580,9 @@
         line-height: 34px;
     }
 
-    .bloc5 p{
+    .bloc5 p {
         font-size: 16px;
-        line-height: 28px;
+        line-height: 26px;
     }
 
     .bloc5 img {
@@ -612,7 +620,7 @@
         text-align: center;
         align-items: center;
         justify-content: center;
-        width: 700px;
+        width: 91%;
         padding: 0px;
         position: relative;
         left: 50%;

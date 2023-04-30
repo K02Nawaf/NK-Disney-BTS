@@ -43,7 +43,7 @@ const scrollNav = document.querySelector('.navmain');
 window.addEventListener('scroll', () => {
   const scrollPosition = window.scrollY;
   const pageHeight = document.documentElement.scrollHeight;
-  const scrollThreshold = pageHeight * 0.12; 
+  const scrollThreshold = pageHeight * 0.15; 
   
   if (scrollPosition >= scrollThreshold) {
     scrollNav.style.opacity = '1';
@@ -72,3 +72,7 @@ for (let i = 0; i < buttons.length; i++) {
     }
   });
 }
+
+// language change 
+
+const
