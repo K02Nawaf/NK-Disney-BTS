@@ -1,0 +1,31 @@
+const is used to declare a variable whose value cannot be reassigned once it has been initialized. 
+This means that the variable will have a constant value throughout its lifetime.
+
+Example:
+const x = 5;
+x = 10; // This will throw an error
+
+let is used to declare a variable that can be reassigned later. 
+This means that the value of the variable can change during its lifetime.
+
+Example:
+let x = 5;
+x = 10; // This is allowed
+
+var is also used to declare a variable that can be reassigned, but it has some differences compared to let. 
+One main difference is that var has function scope, meaning that if it's declared inside a function, 
+it's only accessible inside that function. On the other hand, let has block scope, 
+meaning that if it's declared inside a block (e.g. inside a loop or an if statement), it's only accessible inside that block.
+
+Example:
+function foo() {
+  var x = 5;
+  if (true) {
+    var y = 10;
+    console.log(x); // This will log 5
+  }
+  console.log(y); // This will log 10
+}
+foo();
+console.log(x); // This will throw an error because x is not defined outside of foo()
+console.log(y); // This will throw an error because y is not defined outside of foo()

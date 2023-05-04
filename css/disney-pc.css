@@ -117,7 +117,7 @@
 
     }
 
-
+/* change les couleurs en hover */
     .login:hover {
         background-color: white;
         color: black;
@@ -131,7 +131,7 @@
         margin: 5px;
         height: auto;
     }
-
+/* va changer la taille quand en clic */
     .sign:active,
     .login:active {
         opacity: 60%;
