@@ -285,6 +285,7 @@
         opacity: 1;
         background-color: transparent;
         border: 0px;
+        top: 56px;
     }
 
     .down-arrow:hover .arrow-R {
@@ -318,7 +319,7 @@
 
     .bloc2 {
         width: 100%;
-        height: 100vh;
+        /*! height: 100vh; */
         box-sizing: border-box;
         background-image: url(../img/bg_bloc2.jpg);
         background-repeat: no-repeat;
@@ -326,6 +327,11 @@
         background-size: contain;
         display: flex;
         padding: 5.6vw;
+        min-height: 50vw;
+        max-height: 100vw;
+        background-position: top right;
+        padding-top: 0px;
+        position: relative;
     }
 
     .bg_bloc2 {
@@ -335,10 +341,14 @@
     .div2 {
         font-family: 'Avenir LT Std 55 Roman', Avenir;
         color: white;
-        width: 50%;
+        /*! width: 80%; */
         max-width: 640px;
         box-sizing: border-box;
-        margin-top: 20px;
+        /*! margin-top: 20px; */
+        /*! height: 101%; */
+        width: 50%;
+        top: 10%;
+        position: absolute;
     }
 
     .div2 h1 {
@@ -356,7 +366,7 @@
         font-size: 20px;
         line-height: 30px;
         letter-spacing: .2px;
-        width: 76%;
+        /*! width: 65%; */
     }
 
     /* -==--==--==-Section 3-==--==--==--==--==--==-Section 3-==--==--==--==--==--==-Section 3-==--==--==- */
