@@ -73,7 +73,7 @@
         margin-bottom: 5px;
     }
 
-    /* Li of logo v */
+    /* Li of logo */
     .distance {
         margin-top: 8px;
         margin-right: auto;
@@ -213,12 +213,12 @@
         color: silver;
         padding: 0px 20px;
         font-size: 20px;
-        font-family: 'AvenirLTStd-Black', Avenir Helvetica, sans-serif;
+        font-family: 'AvenirLTStd-Black', Avenir;
         box-sizing: border-box;
     }
 
     .Email-bar:focus {
-        border-color: hsla(0, 0%, 100%, 0.247);
+        border-color: rgba(255, 255, 255, 0.247);
         outline: 0;
     }
 
