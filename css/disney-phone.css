@@ -121,6 +121,11 @@
         background-color: white;
         color: black;
     }
+    
+    .sign:hover{
+        border: 1px solid #1872e8;
+        background-color: #1872e8;
+    }
 
     .li-sign,
     .li-login {
